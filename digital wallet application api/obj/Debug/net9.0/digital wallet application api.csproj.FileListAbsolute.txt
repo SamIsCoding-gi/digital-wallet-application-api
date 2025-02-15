@@ -156,3 +156,4 @@ C:\Users\Samuel Kibunda\digital wallet application api\digital wallet applicatio
 C:\Users\Samuel Kibunda\digital wallet application api\digital wallet application api\obj\Debug\net9.0\ref\digital wallet application api.dll
 c:\Users\Samuel Kibunda\digital wallet application api\digital wallet application api\bin\Debug\net9.0\MySqlConnector.dll
 c:\Users\Samuel Kibunda\digital wallet application api\digital wallet application api\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
+c:\Users\Samuel Kibunda\digital wallet application api\digital wallet application api\obj\Debug\net9.0\digital wallet application api.sourcelink.json

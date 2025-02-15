@@ -1,13 +1,40 @@
-namespace digital_wallet_application_api;
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-public class User
+namespace digital_wallet_application_api.Models.Entities
 {
-    public Guid Id {get; set;}
-    public required string FirstName {get; set;}
-    public required string LastName {get; set;}
-    public required string Email {get; set;}
-    public required string Password {get; set;}
-    public required int PhoneNumber {get; set;}
-    public required int Balance {get; set;} 
+    public class User
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid Id { get; set; }
 
+        [Required]
+        [MaxLength(255)]
+        public string FirstName { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        public string LastName { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        public string Password { get; set; }
+
+        [NotMapped]
+        public string ConfirmPassword { get; set; }
+
+        [Required]
+        public string PhoneNumber { get; set; }
+
+        [Required]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal Balance { get; set; } = 500;
+    }
 }
