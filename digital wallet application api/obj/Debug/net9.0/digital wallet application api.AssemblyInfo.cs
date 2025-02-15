@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("digital wallet application api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7819866d139fdc334c2176d64f74468bb16eaf7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e1d89edff7670e7fcf65b9957dbd12c5cf36e96")]
 [assembly: System.Reflection.AssemblyProductAttribute("digital wallet application api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("digital wallet application api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
