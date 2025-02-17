@@ -1,5 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using digital_wallet_application_api.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace digital_wallet_application_api
 {
@@ -11,16 +11,12 @@ namespace digital_wallet_application_api
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Wallet> Wallets { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<User>(entity =>
-            {
-                entity.Property(e => e.Balance)
-                      .HasColumnType("decimal(18, 2)");
-            });
         }
     }
 }

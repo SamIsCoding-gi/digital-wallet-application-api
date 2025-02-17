@@ -33,8 +33,5 @@ namespace digital_wallet_application_api.Models.Entities
         [Required]
         public string PhoneNumber { get; set; }
 
-        [Required]
-        [Column(TypeName = "decimal(18, 2)")]
-        public decimal Balance { get; set; } = 500;
     }
 }
